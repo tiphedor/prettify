@@ -3,7 +3,7 @@ Quick and dirty WebExtension that automatically makes JSON pages good looking.
 
 Turns the boring-looking stock JSON rendering from :
 
-![Image of an unstyled JSON page](https://i.imgur.com/pFnn364.png)
+![Image of an unstyled JSON page](https://i.imgur.com/c8X3vDq.png)
 
 Into this : 
 
