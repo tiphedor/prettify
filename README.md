@@ -16,7 +16,7 @@ The beauty of it is that it automatically runs on every page that has its `Conte
 
 ## Install
 
-Chrome Web Store: [https://chrome.google.com/webstore/detail/emdbenifhkcjjilaliemafklfdnpckhk/publish-review](https://chrome.google.com/webstore/detail/emdbenifhkcjjilaliemafklfdnpckhk/publish-review)
+Chrome Web Store: [https://chrome.google.com/webstore/detail/emdbenifhkcjjilaliemafklfdnpckhk/publish-review](https://chrome.google.com/webstore/detail/emdbenifhkcjjilaliemafklfdnpckhk)
 
 Firefox Addon Marketplace: Coming soon
 
