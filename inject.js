@@ -39,6 +39,8 @@ if (document.contentType === 'application/json') {
 		.renderjson .array.syntax  { color: lightsalmon; }
 		.highlight .nc { color: plum; font-weight: normal; }
 		.highlight .nt { color: lightblue; }
+
+		code { color: D8000C; }
 	</style>`
 
 	renderjson.set_show_to_level(2)
@@ -53,14 +55,12 @@ if (document.contentType === 'application/json') {
 			document.body.innerHTML = `
 				${css}
 
-				<strong>Raw</strong>
+				<textarea style="width: 100%;">${pageContent}</textarea>
+
+				<br />
 				<br />
 				
-				<p class='raw'>
-					${JSON.stringify(json)}
-				<p>
-				
-				<strong>Rendered</strong>
+				<strong>Rendered:</strong>
 				
 				<br />
 			`
@@ -68,16 +68,19 @@ if (document.contentType === 'application/json') {
 				renderjson(json)
 			)
 		} catch(e) {
-			console.error(e)
 			document.body.innerHTML = `
 				${css}
 				
-				Invalid JSON response.
+				<h3>Invalid JSON response. That's a shame.</h3>
+
+				<code>
+					&gt; ${e.message}
+				</code>
 				
 				<br />
 				<br />
 				
-				${pageContent}
+				<textarea rows="10" cols=140>${pageContent}</textarea>
 			`
 		}
 	}
